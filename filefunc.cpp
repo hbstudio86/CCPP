@@ -1,3 +1,9 @@
+/*
+ofstream은 ostream의 메서드를 사용할 수 있다.
+그 이유는 ofstream이 ostream을 상속받은 자식 클래스이기 때문이다.
+*/
+
+
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
