@@ -22,6 +22,8 @@ private:
 	int c;
 public:
 	C(int g = 0, int m = 0, int n = 0) : B(m, n) { c = g; }	//인라인 함수
+	template <class T>
+	void show(void);
 };
 
 
@@ -37,4 +39,10 @@ int main(void)
 	// Class A에서 멤버가 초기화가 되고
 	// 그다음 B, C순으로 멤버가 초기화 된다.
 	return 0;
+}
+
+template <class T>
+void C::show(void)
+{
+
 }
