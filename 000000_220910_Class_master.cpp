@@ -11,6 +11,7 @@ int main(void) {
 	t1.tcprint();
 	t1.tcreset();
 	t1.tcprint();
-
+	t1<<3;
+	t1.tcprint();
 	return 0;
 }

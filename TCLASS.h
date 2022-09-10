@@ -10,4 +10,5 @@ public:
 	void tcreset(void);
 	void tcadd(void);
 	void tcprint(void)const;
+	void operator<<(const int);
 };
