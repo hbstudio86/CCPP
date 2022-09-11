@@ -13,3 +13,12 @@ void TCLASS::tcprint(void)const {
 void TCLASS::operator<<(const int n) {
 	this->counting += n;
 }
+TCLASS TCLASS::operator++() {
+	this->counting++;
+	return *this;
+}
+TCLASS TCLASS::operator++(int) {
+	TCLASS prev(this->counting);
+	this->counting++;
+	return prev;
+}
