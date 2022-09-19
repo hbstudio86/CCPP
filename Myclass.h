@@ -11,6 +11,10 @@ public:
 		pArr = new int[d];
 		if (ar) memcpy(pArr, ar, sizeof(int) * n);
 	}
+	Myclass(const Myclass& mc) : n(mc.n) {
+		pArr = new int[n];
+		memcpy(pArr, mc.pArr, sizeof(int) * n);
+	}
 	~Myclass() { delete[] pArr; }
 	Myclass add(const Myclass& mc)const {
 		Myclass tmp(n);
