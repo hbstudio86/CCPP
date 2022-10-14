@@ -38,20 +38,30 @@ int main(void) {
 	////여기서의 getline은 iostream에서의 메서드가 아니다라는 사실을 알 수있다
 
 	//Q3
-	char fName[10];
-	char lName[10];
-	printf("퍼스트 네임(이름)을 입력하시오 : ");
-	fgets(fName, 10, stdin);
-	printf("라스트 네임(성)을 입력하시오 : ");
-	fgets(lName, 10, stdin);
-	for (int i = 0; i < 10; i++) {
-		if (lName[i] == '\n') {
-			lName[i] = '\0';
-		}
-		if (fName[i] == '\n') {
-			fName[i] = '\0';
-		}
-	}
-	printf("하나의 문자열로 만들면: %s, %s\n", lName, fName);
+	//char fName[10];
+	//char lName[10];
+	//printf("퍼스트 네임(이름)을 입력하시오 : ");
+	//fgets(fName, 10, stdin);
+	//printf("라스트 네임(성)을 입력하시오 : ");
+	//fgets(lName, 10, stdin);
+	//for (int i = 0; i < 10; i++) {
+	//	if (lName[i] == '\n') {
+	//		lName[i] = '\0';
+	//	}
+	//	if (fName[i] == '\n') {
+	//		fName[i] = '\0';
+	//	}
+	//}
+	//printf("하나의 문자열로 만들면: %s, %s\n", lName, fName);
+
+	////Q4
+	//string fName;
+	//string lName;
+	//cout << "퍼스트 네임 (이름)을 입력하시오: ";
+	//getline(cin, fName);
+	//cout << "라스트 네임 (성)을 입력하시오: ";
+	//getline(cin, lName);
+	//cout << "하나의 문자열로 만들면: " << lName << ", " << fName << endl;
+	////후기 : getline이 생각나지 않았네... 이부분은 좀 더 암기하자
 	return 0;
 }
