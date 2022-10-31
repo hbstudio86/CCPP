@@ -2,9 +2,13 @@
 #include <string>
 #include <cstring>	
 
-
-
 using namespace std;
+
+struct CandyBar {
+	string Name;
+	float Weight;
+	int Kcal;
+};
 
 int main(void) {
 	////Q1. 행단위로 입력 후 출력. 점수는 한 단계 아래 점수로 표기
@@ -63,5 +67,23 @@ int main(void) {
 	//getline(cin, lName);
 	//cout << "하나의 문자열로 만들면: " << lName << ", " << fName << endl;
 	////후기 : getline이 생각나지 않았네... 이부분은 좀 더 암기하자
+
+	////Q5
+	//CandyBar snack = { "Mocha Munch",2.3,350 };
+	//cout << "snack name > " << snack.Name << endl;
+	//cout << "snack weith> " << snack.Weight << endl;
+	//cout << "snack cal  > " << snack.Kcal << endl;
+	////후기 : 쉽다
+
+	////Q6
+	//CandyBar snacks[3] = { {"snack1",10.1,100},{"snack2",11.2,200},{"snack3",13,300} };
+	//cout << "snack1 " << snacks[0].Name << "/ wgt " << snacks[0].Weight << "kCal " << snacks[0].Kcal << endl;
+	//cout << "snack2 " << snacks[1].Name << "/ wgt " << snacks[1].Weight << "kCal " << snacks[1].Kcal << endl;
+	//cout << "snack3 " << snacks[2].Name << "/ wgt " << snacks[2].Weight << "kCal " << snacks[2].Kcal << endl;
+	////후기 : 기본기를 토대로 하면 쉽게 할 수 있다.
+
+	//q7 : pizza co. struct
+
+
 	return 0;
 }
