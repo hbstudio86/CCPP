@@ -6,6 +6,7 @@ using namespace std;
 class Aclass {
 public:
 	virtual void f1() const = 0;	//순수 가상 함수
+	Aclass() { cout << "추상클래스 생성자 작동" << endl; };	//가상 클래스의 생성자는 포함할 수 있음
 	void f2() {
 		cout << "추상클래스 함수f2" << endl;
 	}
@@ -52,6 +53,7 @@ int main(void) {
 	cc1.f1();
 	cc1.f2();
 	cc1.f3();
+	//Aclass ac1;
 
 	return 0;
 }
