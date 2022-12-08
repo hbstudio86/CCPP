@@ -45,7 +45,7 @@ public:
 int main(void) {
 
 //	Aclass acl;
-	Bclass bc1;
+	Bclass bc1; //추상 클래스의 생성자가 동작이 됨
 	bc1.f1();
 	bc1.f2();
 	bc1.f3();
@@ -53,7 +53,7 @@ int main(void) {
 	cc1.f1();
 	cc1.f2();
 	cc1.f3();
-	//Aclass ac1;
+	//Aclass ac1; //결론은 추상 클래스의 생성자는 잘 작동 된다. 다만 객체 생성은 되지 않을 뿐 
 
 	return 0;
 }
